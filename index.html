@@ -240,6 +240,7 @@
 
 </div>
 <script>
+ 
  var form = document.getElementById('sheetdb-form');
  form.addEventListener("submit", e => {
    e.preventDefault();
@@ -247,13 +248,9 @@
      method : "POST",
      body: new FormData(document.getElementById('sheetdb-form'))
    }).then(
-     (response) => response.json()).then((html) => {
-    var successbox = document.getElementById("successbox");
-    successbox.innerHTML += 'You have successfully submitted. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
-    successbox.setAttribute("class","alert alert-warning alert-dismissible fade show");
-    document.getElementsByName("data[FullName]")[0].value = "";
-    document.getElementsByName("data[EmailId]")[0].value = "";
-    document.getElementsByName("data[MessageText]")[0].value = "";
+     (response) =>{response.json()}).then((html) => {
+       alert("Data is successfully submitted") ;
+      location.reload();    
    });
   });
 </script>
