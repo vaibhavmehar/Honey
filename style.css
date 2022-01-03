@@ -1,0 +1,26 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+    font-weight: 500;
+}
+
+#DropMenu a{
+    color: black;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    font-size: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.navbar-margin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.carousel-item img{
+    height: 500px;
+    width: 200px;
+}
+
