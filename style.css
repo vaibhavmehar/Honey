@@ -14,13 +14,27 @@
     margin-right: 20px;
 }
 
+.navbar-toggler{
+    border: none;
+    box-shadow: none !important;
+}
+
 .navbar-margin{
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.carousel-item img{
-    height: 500px;
-    width: 200px;
+.carousel-item img{   
+    margin-top: -10px;
+    height: 600px;
+    width: 500px;
 }
 
+@media only screen and (max-width: 500px) {
+.carousel-item img{
+    
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+}
+}
