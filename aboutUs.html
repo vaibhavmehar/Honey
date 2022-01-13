@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b7926f3752.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Satcomsoftware Pvt Ltd</title>
+
+    <script>
+      window.onload = function(){
+        document.getElementById("load1").hidden = true;
+        
+       }
+      scriptURL="https://script.google.com/macros/s/AKfycbzzAp0rRlgKCAFPpYwPRzv-_UwBSdoHQPB9bkU7pnGTU4WXLy7uy4uuUqG34qUdn8C6/exec";
+  
+                    fetch(scriptURL, { method: 'GET'})
+                      .then((response) => response.json())
+                      .then((data) => {
+                        document.getElementById("load1").hidden = false;
+                        document.getElementById("loading").hidden = true;
+                    for(var i=0;i<data.length;i++){
+                    
+  document.getElementById("cards").innerHTML += '<div class="row justify-content-evenly"><div class="col-md-10"><div class="card mb-3" style="border-radius: 15px; box-shadow: 5px 10px 8px #888888;"><div class="row g-0"><div class="col-md-4 text-center" style="padding: 50px 100px"><img src="image/person.png" style="width: 150px; height: 150px;" class="img-fluid rounded-start" alt="..."></div>' +
+  '<div class="col-md-8"><div class="card-body"><br><h5 class="card-title">' + data[i].FullName+ '</h5><hr>' +
+   '<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>' +
+  '<p class="card-text">Contact Details : ' + data[i].EmailId + '</p><p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></div></div></div></div></div></div>';
+                      
+  
+  
+                    }
+  
+  
+  
+                      })
+                      .catch(error => console.error('Error!', error.message))
+               
+      
+              
+      
+      </script>
+  </head>
+  <body style="background-color: #F8F9F4;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div  class="text-center" id="loading">
+     
+    <div class="spinner-border text-danger" style="width: 80px;height: 80px;" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div> 
+
+
+    
+  </div>
+ 
+   
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><i class="fab fa-apple-pay"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item navbar-margin">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item navbar-margin">
+                <a class="nav-link" href="AboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item navbar-margin dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="DropMenu">
+                  <li><a class="dropdown-item" href="#">Corporate Recuritment</a></li>
+                  <li><a class="dropdown-item" href="#">Developer Recuirement</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Project Manager</a></li>
+                </ul>
+              </li>
+              <li class="nav-item navbar-margin">
+                <a class="nav-link" href="#">Client</a>
+              </li>
+              <li class="nav-item navbar-margin">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="load1">
+      <div class="container-fluid">
+
+          <div class="row justify-content-evenly" style="margin-top: 80px;">
+              <div class="col-md-5" style="margin-top: 100px;">
+              <h1><i class="fas fa-archive text-primary"></i></h1>
+                <h5>Corporate Roles</h5>
+                <p>Recurite people for corporate roles and justify the resouce as per their needs.</p>
+                <h1><i class="fas fa-ad text-danger"></i></h1>
+  <h5>Developer Roles</h5>
+  <p>Recurite people for corporate roles and justify the resouce as per their needs.</p>
+  <h1><i class="fas fa-atom text-success"></i></h1>
+    <h5>Project Manager</h5>
+    <p>Recurite people for corporate roles and justify the resouce as per their needs.</p>
+              </div>
+              <div class="col-md-5 text-center">
+                  <img src="image/career.png" style="width: 600px; height: 400px;margin-top: 50px;" class="img-fluid">
+              </div>
+              
+          </div>
+       
+          <div id="cards" style="margin-top: 50px;">
+            
+          </div>
+
+
+
+
+  </div>
+</div>
+  </body>
+  
+</html>

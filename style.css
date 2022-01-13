@@ -37,4 +37,31 @@
     height: 300px;
     width: 300px;
 }
+
+.carousel-control-prev,.carousel-control-next{
+    margin-top:80px;
 }
+
+}
+
+@media only screen and (max-width: 320px){
+.carousel-item img {
+    margin-top: 45px;
+    height: 200px;
+    width: 300px;
+}
+
+.carousel-control-prev,.carousel-control-next{
+    margin-top:55px;
+}
+
+
+}
+
+#loading {
+    
+   
+    margin-top: 300px
+    
+  }
+  
